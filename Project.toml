@@ -1,0 +1,4 @@
+name = "RedefineStructs"
+uuid = "762a3d04-fca4-43a9-a616-4e78f20446c0"
+authors = ["Robert Moss <rmoss92@gmail.com>"]
+version = "0.1.0"
