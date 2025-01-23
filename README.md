@@ -1,6 +1,6 @@
 # RedefineStructs.jl
 
-> Work-in-progress and very hacky.
+> **Note**: Very hacky and likely un-Julian.
 
 A simple `@dev` macro to allow you to redefine structs in the Julia REPL.
 - https://discourse.julialang.org/t/redefine-struct-when-working-with-repl
