@@ -63,4 +63,4 @@ end
 
 ## Limitations
 
-Once you've settled on a definition of your struct—and if you've defined the struct in a file you `include`—you can remove the `@dev` macro but will have to restart the REPL due to the struct now being defined as a `const`.
+Once you've settled on a definition of your struct, you can remove the `@dev` macro but will have to restart the REPL due to the struct now being defined as a `const`.
