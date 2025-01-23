@@ -6,6 +6,8 @@ A simple `@dev` macro to allow you to redefine structs in the Julia REPL.
 - https://discourse.julialang.org/t/redefine-struct-when-working-with-repl
 - https://github.com/timholy/Revise.jl/issues/18
 
+Intended _only_ for use during code development.
+
 ## Installation
 ```
 pkg> add https://github.com/mossr/RedefineStructs.jl
@@ -58,3 +60,7 @@ end
     state::State
 end
 ```
+
+## Limitations
+
+Once you've settled on a definition of your struct—and if you've defined the struct in a file you `include`—you can remove the `@dev` macro but will have to restart the REPL due to the struct now being defined as a `const`.
