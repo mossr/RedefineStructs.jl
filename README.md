@@ -40,6 +40,8 @@ end
 
 And with the `@with_kw` macro from `Parameters.jl` as well:
 ```julia
+using Parameters
+
 @dev @with_kw struct MyStruct
     x::String = "Something"
     y::Vector = [1, 2, 3]
