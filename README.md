@@ -30,7 +30,15 @@ Then you can redefine `MyStruct` in the REPL without an error:
 end
 ```
 
-Works with the `@with_kw` macro from `Parameters.jl` as well:
+Works with `Base.@kwdef`:
+```julia
+@dev Base.@kwdef struct MyStruct
+    x::String = "Something"
+    y::Vector = [1, 2, 3]
+end
+```
+
+And with the `@with_kw` macro from `Parameters.jl` as well:
 ```julia
 @dev @with_kw struct MyStruct
     x::String = "Something"

@@ -3,10 +3,10 @@ module RedefineStructs
 export @dev
 
 macro dev(struct_def)
-    if struct_def.args[1] == Symbol("@with_kw")
-        struct_name = struct_def.args[3].args[2]
-    else
+    if struct_def.head == :struct
         struct_name = struct_def.args[2]
+    else
+        struct_name = struct_def.args[3].args[2]
     end
 
     struct_def = string(struct_def)
